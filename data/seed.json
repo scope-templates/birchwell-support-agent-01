@@ -1,0 +1,949 @@
+{
+  "customers": [
+    {
+      "id": "cus_01",
+      "name": "Harrow Lane Analytics",
+      "currency": "GBP"
+    },
+    {
+      "id": "cus_02",
+      "name": "Quietfield Studio",
+      "currency": "USD"
+    },
+    {
+      "id": "cus_03",
+      "name": "Tessel Robotics",
+      "currency": "EUR"
+    }
+  ],
+  "meters": [
+    {
+      "id": "mtr_api_calls",
+      "name": "API calls",
+      "aggregation": "sum",
+      "unit_price_minor": 1
+    },
+    {
+      "id": "mtr_compute",
+      "name": "Compute minutes",
+      "aggregation": "sum",
+      "unit_price_minor": 3
+    },
+    {
+      "id": "mtr_storage",
+      "name": "Storage (GB)",
+      "aggregation": "max",
+      "unit_price_minor": 40
+    },
+    {
+      "id": "mtr_seats",
+      "name": "Active users",
+      "aggregation": "unique_count",
+      "unit_price_minor": 250
+    }
+  ],
+  "usage_events": [
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 60,
+      "occurred_at": "2026-09-01T17:07:00Z",
+      "idempotency_key": "cus_01-2026-09-0001"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 850,
+      "occurred_at": "2026-09-02T09:35:00Z",
+      "idempotency_key": "cus_01-2026-09-0002"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_seats",
+      "subject": "usr_cleo",
+      "quantity": 1,
+      "occurred_at": "2026-09-03T05:06:00Z",
+      "idempotency_key": "cus_01-2026-09-0003"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 200,
+      "occurred_at": "2026-09-04T18:40:00Z",
+      "idempotency_key": "cus_01-2026-09-0004"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 360,
+      "occurred_at": "2026-09-05T11:06:00Z",
+      "idempotency_key": "cus_01-2026-09-0005"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_seats",
+      "subject": "usr_cleo",
+      "quantity": 1,
+      "occurred_at": "2026-09-07T22:04:00Z",
+      "idempotency_key": "cus_01-2026-09-0006"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_seats",
+      "subject": "usr_cleo",
+      "quantity": 1,
+      "occurred_at": "2026-09-11T01:39:00Z",
+      "idempotency_key": "cus_01-2026-09-0007"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_storage",
+      "subject": "bucket_primary",
+      "quantity": 21,
+      "occurred_at": "2026-09-12T15:43:00Z",
+      "idempotency_key": "cus_01-2026-09-0008"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 185,
+      "occurred_at": "2026-09-13T13:49:00Z",
+      "idempotency_key": "cus_01-2026-09-0009"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_seats",
+      "subject": "usr_bram",
+      "quantity": 1,
+      "occurred_at": "2026-09-14T14:37:00Z",
+      "idempotency_key": "cus_01-2026-09-0010"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_storage",
+      "subject": "bucket_primary",
+      "quantity": 37,
+      "occurred_at": "2026-09-16T11:19:00Z",
+      "idempotency_key": "cus_01-2026-09-0011"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 430,
+      "occurred_at": "2026-09-17T05:44:00Z",
+      "idempotency_key": "cus_01-2026-09-0012"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 90,
+      "occurred_at": "2026-09-18T02:36:00Z",
+      "idempotency_key": "cus_01-2026-09-0013"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_storage",
+      "subject": "bucket_primary",
+      "quantity": 27,
+      "occurred_at": "2026-09-19T16:31:00Z",
+      "idempotency_key": "cus_01-2026-09-0014"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 120,
+      "occurred_at": "2026-09-21T23:28:00Z",
+      "idempotency_key": "cus_01-2026-09-0015"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 105,
+      "occurred_at": "2026-09-22T19:04:00Z",
+      "idempotency_key": "cus_01-2026-09-0016"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 270,
+      "occurred_at": "2026-09-24T16:26:00Z",
+      "idempotency_key": "cus_01-2026-09-0017"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 330,
+      "occurred_at": "2026-09-25T10:09:00Z",
+      "idempotency_key": "cus_01-2026-09-0018"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_storage",
+      "subject": "bucket_primary",
+      "quantity": 39,
+      "occurred_at": "2026-09-26T13:02:00Z",
+      "idempotency_key": "cus_01-2026-09-0019"
+    },
+    {
+      "customer_id": "cus_01",
+      "meter_id": "mtr_seats",
+      "subject": "usr_cleo",
+      "quantity": 1,
+      "occurred_at": "2026-09-28T02:48:00Z",
+      "idempotency_key": "cus_01-2026-09-0020"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 170,
+      "occurred_at": "2026-10-01T02:10:00Z",
+      "idempotency_key": "cus_02-2026-10-0021"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_seats",
+      "subject": "usr_gus",
+      "quantity": 1,
+      "occurred_at": "2026-10-01T12:35:00Z",
+      "idempotency_key": "cus_02-2026-10-0022"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 470,
+      "occurred_at": "2026-10-01T04:52:00Z",
+      "idempotency_key": "cus_02-2026-10-0023"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 670,
+      "occurred_at": "2026-10-02T17:17:00Z",
+      "idempotency_key": "cus_02-2026-10-0024"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 145,
+      "occurred_at": "2026-10-02T11:43:00Z",
+      "idempotency_key": "cus_02-2026-10-0025"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_seats",
+      "subject": "usr_gus",
+      "quantity": 1,
+      "occurred_at": "2026-10-03T07:09:00Z",
+      "idempotency_key": "cus_02-2026-10-0026"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 40,
+      "occurred_at": "2026-10-03T05:09:00Z",
+      "idempotency_key": "cus_02-2026-10-0027"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_seats",
+      "subject": "usr_eli",
+      "quantity": 1,
+      "occurred_at": "2026-10-04T21:14:00Z",
+      "idempotency_key": "cus_02-2026-10-0028"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_storage",
+      "subject": "bucket_primary",
+      "quantity": 8,
+      "occurred_at": "2026-10-04T15:53:00Z",
+      "idempotency_key": "cus_02-2026-10-0029"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 870,
+      "occurred_at": "2026-10-05T05:16:00Z",
+      "idempotency_key": "cus_02-2026-10-0030"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_seats",
+      "subject": "usr_fern",
+      "quantity": 1,
+      "occurred_at": "2026-10-05T00:09:00Z",
+      "idempotency_key": "cus_02-2026-10-0031"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 650,
+      "occurred_at": "2026-10-05T17:23:00Z",
+      "idempotency_key": "cus_02-2026-10-0032"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 210,
+      "occurred_at": "2026-10-05T18:20:00Z",
+      "idempotency_key": "cus_02-2026-10-0033"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 55,
+      "occurred_at": "2026-10-06T22:54:00Z",
+      "idempotency_key": "cus_02-2026-10-0034"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 770,
+      "occurred_at": "2026-10-06T19:41:00Z",
+      "idempotency_key": "cus_02-2026-10-0035"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_storage",
+      "subject": "bucket_primary",
+      "quantity": 51,
+      "occurred_at": "2026-10-06T23:03:00Z",
+      "idempotency_key": "cus_02-2026-10-0036"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_storage",
+      "subject": "bucket_primary",
+      "quantity": 37,
+      "occurred_at": "2026-10-07T21:51:00Z",
+      "idempotency_key": "cus_02-2026-10-0037"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 190,
+      "occurred_at": "2026-10-07T12:25:00Z",
+      "idempotency_key": "cus_02-2026-10-0038"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_storage",
+      "subject": "bucket_primary",
+      "quantity": 33,
+      "occurred_at": "2026-10-07T12:06:00Z",
+      "idempotency_key": "cus_02-2026-10-0039"
+    },
+    {
+      "customer_id": "cus_02",
+      "meter_id": "mtr_seats",
+      "subject": "usr_gus",
+      "quantity": 1,
+      "occurred_at": "2026-10-07T20:25:00Z",
+      "idempotency_key": "cus_02-2026-10-0040"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_storage",
+      "subject": "bucket_primary",
+      "quantity": 55,
+      "occurred_at": "2026-10-01T08:30:00Z",
+      "idempotency_key": "cus_03-2026-10-0041"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 235,
+      "occurred_at": "2026-10-01T05:33:00Z",
+      "idempotency_key": "cus_03-2026-10-0042"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_seats",
+      "subject": "usr_hal",
+      "quantity": 1,
+      "occurred_at": "2026-10-01T06:33:00Z",
+      "idempotency_key": "cus_03-2026-10-0043"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 130,
+      "occurred_at": "2026-10-01T04:44:00Z",
+      "idempotency_key": "cus_03-2026-10-0044"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 810,
+      "occurred_at": "2026-10-01T00:48:00Z",
+      "idempotency_key": "cus_03-2026-10-0045"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 790,
+      "occurred_at": "2026-10-02T09:41:00Z",
+      "idempotency_key": "cus_03-2026-10-0046"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 230,
+      "occurred_at": "2026-10-02T22:54:00Z",
+      "idempotency_key": "cus_03-2026-10-0047"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_seats",
+      "subject": "usr_ines",
+      "quantity": 1,
+      "occurred_at": "2026-10-02T16:23:00Z",
+      "idempotency_key": "cus_03-2026-10-0048"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_storage",
+      "subject": "bucket_primary",
+      "quantity": 18,
+      "occurred_at": "2026-10-02T11:49:00Z",
+      "idempotency_key": "cus_03-2026-10-0049"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_seats",
+      "subject": "usr_hal",
+      "quantity": 1,
+      "occurred_at": "2026-10-03T17:34:00Z",
+      "idempotency_key": "cus_03-2026-10-0050"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_seats",
+      "subject": "usr_ines",
+      "quantity": 1,
+      "occurred_at": "2026-10-03T20:14:00Z",
+      "idempotency_key": "cus_03-2026-10-0051"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 360,
+      "occurred_at": "2026-10-04T07:52:00Z",
+      "idempotency_key": "cus_03-2026-10-0052"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 140,
+      "occurred_at": "2026-10-04T23:51:00Z",
+      "idempotency_key": "cus_03-2026-10-0053"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 85,
+      "occurred_at": "2026-10-04T06:33:00Z",
+      "idempotency_key": "cus_03-2026-10-0054"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 170,
+      "occurred_at": "2026-10-04T11:46:00Z",
+      "idempotency_key": "cus_03-2026-10-0055"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_storage",
+      "subject": "bucket_primary",
+      "quantity": 9,
+      "occurred_at": "2026-10-05T00:50:00Z",
+      "idempotency_key": "cus_03-2026-10-0056"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_compute",
+      "subject": "proj_main",
+      "quantity": 100,
+      "occurred_at": "2026-10-05T15:16:00Z",
+      "idempotency_key": "cus_03-2026-10-0057"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_api_calls",
+      "subject": "proj_main",
+      "quantity": 360,
+      "occurred_at": "2026-10-05T22:38:00Z",
+      "idempotency_key": "cus_03-2026-10-0058"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_storage",
+      "subject": "bucket_primary",
+      "quantity": 30,
+      "occurred_at": "2026-10-06T14:51:00Z",
+      "idempotency_key": "cus_03-2026-10-0059"
+    },
+    {
+      "customer_id": "cus_03",
+      "meter_id": "mtr_seats",
+      "subject": "usr_ines",
+      "quantity": 1,
+      "occurred_at": "2026-10-06T11:05:00Z",
+      "idempotency_key": "cus_03-2026-10-0060"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv_1001",
+      "customer_id": "cus_01",
+      "period": "2026-09",
+      "currency": "GBP",
+      "finalized_at": "2026-10-03T00:00:00Z",
+      "lines": [
+        {
+          "meter_id": "mtr_api_calls",
+          "quantity": 2240,
+          "amount_minor": 2240
+        },
+        {
+          "meter_id": "mtr_compute",
+          "quantity": 760,
+          "amount_minor": 2280
+        },
+        {
+          "meter_id": "mtr_seats",
+          "quantity": 2,
+          "amount_minor": 500
+        },
+        {
+          "meter_id": "mtr_storage",
+          "quantity": 39,
+          "amount_minor": 1560
+        }
+      ]
+    },
+    {
+      "id": "inv_1002",
+      "customer_id": "cus_02",
+      "period": "2026-10",
+      "currency": "USD",
+      "finalized_at": null,
+      "lines": [
+        {
+          "meter_id": "mtr_api_calls",
+          "quantity": 1140,
+          "amount_minor": 1140
+        },
+        {
+          "meter_id": "mtr_compute",
+          "quantity": 355,
+          "amount_minor": 1065
+        },
+        {
+          "meter_id": "mtr_seats",
+          "quantity": 1,
+          "amount_minor": 250
+        }
+      ]
+    },
+    {
+      "id": "inv_1003",
+      "customer_id": "cus_03",
+      "period": "2026-10",
+      "currency": "EUR",
+      "finalized_at": null,
+      "lines": [
+        {
+          "meter_id": "mtr_api_calls",
+          "quantity": 2550,
+          "amount_minor": 2550
+        },
+        {
+          "meter_id": "mtr_compute",
+          "quantity": 860,
+          "amount_minor": 2580
+        },
+        {
+          "meter_id": "mtr_seats",
+          "quantity": 2,
+          "amount_minor": 500
+        },
+        {
+          "meter_id": "mtr_storage",
+          "quantity": 55,
+          "amount_minor": 2200
+        }
+      ]
+    }
+  ],
+  "credit_notes": [
+    {
+      "id": 1,
+      "invoice_id": "inv_1001",
+      "amount_minor": 1500,
+      "reason": "Credit inv_1001 15.00 for the outage on 12 September",
+      "created_at": "2026-10-05T12:03:00Z"
+    },
+    {
+      "id": 2,
+      "invoice_id": "inv_1001",
+      "amount_minor": 450,
+      "reason": "Please credit inv_1001 4.50, the customer was double charged for storage",
+      "created_at": "2026-10-06T15:14:00Z"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "q_0001",
+      "customer_id": "cus_01",
+      "asked_at": "2026-09-01T09:14:00Z",
+      "message": "Do I authenticate API requests with a header or a query param?",
+      "outcome": "faq:auth",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0002",
+      "customer_id": "cus_02",
+      "asked_at": "2026-09-02T13:40:00Z",
+      "message": "Can each customer's billing period start on their sign-up date instead of the 1st?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0003",
+      "customer_id": "cus_01",
+      "asked_at": "2026-09-03T08:05:00Z",
+      "message": "Status check on inv_1001 please",
+      "outcome": "tool:invoice_status",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0004",
+      "customer_id": "cus_01",
+      "asked_at": "2026-09-05T17:22:00Z",
+      "message": "Listing invoices only gives me 20 at a time; how do I page through all of them for an export?",
+      "outcome": "no_match",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0005",
+      "customer_id": "cus_02",
+      "asked_at": "2026-09-08T10:11:00Z",
+      "message": "Max number of usage events in one batch?",
+      "outcome": "faq:batch-size",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0006",
+      "customer_id": "cus_01",
+      "asked_at": "2026-09-08T15:47:00Z",
+      "message": "Somebody set a customer up in GBP by mistake and they need to be billed in EUR from now on. Can we change the currency?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0007",
+      "customer_id": "cus_02",
+      "asked_at": "2026-09-09T11:30:00Z",
+      "message": "Our metering worker started getting 403 insufficient_permissions on GET /v1/invoices after we gave it its own key. Is that the usage_only key type?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0008",
+      "customer_id": "cus_01",
+      "asked_at": "2026-09-10T09:02:00Z",
+      "message": "Has inv_1001 finalised yet?",
+      "outcome": "tool:invoice_status",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0009",
+      "customer_id": "cus_03",
+      "asked_at": "2026-09-10T16:19:00Z",
+      "message": "Waiting a whole month to see a test bill close isn't practical. Can I fast-forward the clock in test mode?",
+      "outcome": "no_match",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0010",
+      "customer_id": "cus_01",
+      "asked_at": "2026-09-11T14:55:00Z",
+      "message": "When exactly does an invoice finalise after the month ends?",
+      "outcome": "faq:invoice-finalisation",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0011",
+      "customer_id": "cus_03",
+      "asked_at": "2026-09-12T08:37:00Z",
+      "message": "Since May our EUR invoice PDFs print 1.234,56 € instead of €1,234.56. Did something change on your side?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0012",
+      "customer_id": "cus_02",
+      "asked_at": "2026-09-14T10:26:00Z",
+      "message": "Customers want to see their usage so far this month inside our app. Is there an endpoint that gives the running total?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0013",
+      "customer_id": "cus_03",
+      "asked_at": "2026-09-15T19:48:00Z",
+      "message": "Are max and unique counts supported as aggregation types on a meter?",
+      "outcome": "faq:meter-aggregation",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0014",
+      "customer_id": "cus_01",
+      "asked_at": "2026-09-16T09:31:00Z",
+      "message": "For monthly active users, does the same user_93 under two different customers count once or twice?",
+      "outcome": "no_match",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0015",
+      "customer_id": "cus_02",
+      "asked_at": "2026-09-16T14:12:00Z",
+      "message": "Usage goes out from a queue consumer on our side. If the worker crashes halfway through a group, how should it retry without double counting?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0016",
+      "customer_id": "cus_03",
+      "asked_at": "2026-09-17T11:44:00Z",
+      "message": "What's the rate limit per API key?",
+      "outcome": "faq:rate-limit",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0017",
+      "customer_id": "cus_01",
+      "asked_at": "2026-09-18T08:58:00Z",
+      "message": "Some of what our worker sends comes back in an errors array with a position and code subject_required. Should I just send those again unchanged?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0018",
+      "customer_id": "cus_03",
+      "asked_at": "2026-09-20T10:40:00Z",
+      "message": "A worker in Paris stamps events at 00:30 local time on 1 April. Do those count toward March or April?",
+      "outcome": "no_match",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0019",
+      "customer_id": "cus_01",
+      "asked_at": "2026-09-21T13:17:00Z",
+      "message": "Why are some duplicate usage events dropped and others counted twice?",
+      "outcome": "faq:usage-dedupe",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0020",
+      "customer_id": "cus_02",
+      "asked_at": "2026-09-22T09:09:00Z",
+      "message": "Payments reach us by bank transfer, not through Birchwell. How do we mark an invoice as paid?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0021",
+      "customer_id": "cus_01",
+      "asked_at": "2026-09-24T11:22:00Z",
+      "message": "UK VAT is 20%. Where do I set that, and when does tax get added to an invoice?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0022",
+      "customer_id": "cus_02",
+      "asked_at": "2026-09-24T17:36:00Z",
+      "message": "Which header carries the key when I authenticate requests?",
+      "outcome": "faq:auth",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0023",
+      "customer_id": "cus_03",
+      "asked_at": "2026-09-25T10:03:00Z",
+      "message": "Workers only know our internal account id, like acct_2291. Can they look up the Birchwell customer from that?",
+      "outcome": "no_match",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0024",
+      "customer_id": "cus_01",
+      "asked_at": "2026-09-26T14:28:00Z",
+      "message": "Is there a way to price calls in blocks of 1,000 and charge a partial block as a whole one?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0025",
+      "customer_id": "cus_02",
+      "asked_at": "2026-09-27T09:45:00Z",
+      "message": "Overnight our webhook did fail a few times. Is it retried?",
+      "outcome": "faq:webhooks",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0026",
+      "customer_id": "cus_03",
+      "asked_at": "2026-09-28T12:12:00Z",
+      "message": "Quick one: can I change how an existing meter adds things up after it's been created, e.g. from sum to max?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0027",
+      "customer_id": "cus_01",
+      "asked_at": "2026-09-29T08:20:00Z",
+      "message": "Total on inv_1001 looks high to me, can you check it",
+      "outcome": "tool:invoice_status",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0028",
+      "customer_id": "cus_02",
+      "asked_at": "2026-09-30T15:59:00Z",
+      "message": "Need to retire the api_calls_legacy meter. How do I delete it?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0029",
+      "customer_id": "cus_03",
+      "asked_at": "2026-10-01T10:34:00Z",
+      "message": "Steps to issue a credit note through the API?",
+      "outcome": "faq:credit-notes",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0030",
+      "customer_id": "cus_01",
+      "asked_at": "2026-10-02T09:17:00Z",
+      "message": "After rotating keys, how can I check from a server which key it is actually using?",
+      "outcome": "no_match",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0031",
+      "customer_id": "cus_02",
+      "asked_at": "2026-10-03T07:19:00Z",
+      "message": "Late events landed for October, please rerun metering for 2026-10",
+      "outcome": "tool:rerun_metering",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0032",
+      "customer_id": "cus_02",
+      "asked_at": "2026-10-03T11:05:00Z",
+      "message": "We migrated from an old billing system and have six months of historic usage to load. Can I backfill periods that already finalised?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0033",
+      "customer_id": "cus_01",
+      "asked_at": "2026-10-04T13:50:00Z",
+      "message": "Seeing Idempotent-Replayed: true on some usage requests in the request log. What does that mean, and can I filter on it?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0034",
+      "customer_id": "cus_03",
+      "asked_at": "2026-10-04T16:51:00Z",
+      "message": "Show me the lines on inv_1003",
+      "outcome": "tool:invoice_status",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0035",
+      "customer_id": "cus_02",
+      "asked_at": "2026-10-05T10:22:00Z",
+      "message": "Getting 429s from a batch job, what is the rate limit?",
+      "outcome": "faq:rate-limit",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0036",
+      "customer_id": "cus_01",
+      "asked_at": "2026-10-05T12:03:00Z",
+      "message": "Credit inv_1001 15.00 for the outage on 12 September",
+      "outcome": "tool:issue_credit_note",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0037",
+      "customer_id": "cus_03",
+      "asked_at": "2026-10-06T09:38:00Z",
+      "message": "How do I add a one-off onboarding fee to a customer's draft invoice?",
+      "outcome": "no_match",
+      "escalated": 1
+    },
+    {
+      "question_id": "q_0038",
+      "customer_id": "cus_01",
+      "asked_at": "2026-10-06T15:14:00Z",
+      "message": "Please credit inv_1001 4.50, the customer was double charged for storage",
+      "outcome": "tool:issue_credit_note",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0039",
+      "customer_id": "cus_03",
+      "asked_at": "2026-10-07T09:20:00Z",
+      "message": "Recalculate 2026-10 please, our worker caught up",
+      "outcome": "tool:rerun_metering",
+      "escalated": 0
+    },
+    {
+      "question_id": "q_0040",
+      "customer_id": "cus_02",
+      "asked_at": "2026-10-07T16:42:00Z",
+      "message": "Hey, what's the easiest way to fire a sample invoice.finalized event at my endpoint while developing locally?",
+      "outcome": "no_match",
+      "escalated": 0
+    }
+  ]
+}
