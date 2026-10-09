@@ -85,7 +85,19 @@ events, batch size, meter aggregation, invoice finalisation, webhooks, credit no
 date support last reviewed it. A question the FAQ does not cover gets a no-answer reply that points at the
 developer docs.
 
-## Docs
+## Developer docs
 
 The developer docs at https://github.com/scope-templates/marlow-birchwell-docs-01/tree/main/birchwell are the source
 of truth for every integration question; the FAQ is the support team's shorthand.
+
+The service also serves the developer docs as a site at `/help`, with a keyword page search. The 48 pages live in
+`docs/`, copied unchanged from the docs repo; pages are edited in the docs repo and copied again, never edited in
+`docs/`. `billing/help_site.py` renders them:
+
+| Method | Path | Returns |
+|---|---|---|
+| GET | `/help` | every page's title, alphabetical, each linking to its page |
+| GET | `/help/{slug}` | the page `docs/{slug}.md` as HTML, with its title, its `updated` date and links to other pages rewritten to `/help/...`; 404 if unknown |
+| GET | `/help/search?q=...` | pages sharing the most words with the query, with a snippet around the first hit; a page whose title has a query word comes first among equals |
+
+FastAPI's own OpenAPI page stays at `/docs`.

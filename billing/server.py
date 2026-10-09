@@ -4,7 +4,7 @@ from datetime import UTC, datetime
 from fastapi import FastAPI, HTTPException, Response
 from pydantic import BaseModel
 
-from billing import agent, ledger
+from billing import agent, help_site, ledger
 from billing.model import build_model
 
 
@@ -22,6 +22,7 @@ async def lifespan(app):
 
 
 app = FastAPI(title="Birchwell support agent", lifespan=lifespan)
+app.include_router(help_site.router)
 
 
 @app.post("/chat")

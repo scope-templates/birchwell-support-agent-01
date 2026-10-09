@@ -1,5 +1,6 @@
 fastapi>=0.141,<1
 uvicorn>=0.52,<1
 openai>=1.60,<2
+markdown>=3.7,<4
 httpx>=0.28,<1
 pytest>=8.3,<10
