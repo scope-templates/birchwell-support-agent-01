@@ -33,7 +33,7 @@ earns another 429.
 ## Retrying usage safely
 
 `POST /v1/usage/events` dedupes on the `Idempotency-Key` header within 24 hours. Generate the key once per batch and
-resend the **same** key on every retry of that batch. A new key on a retry turns a lost response into double-counted
+send the **same** key again on every retry of that batch. A new key on a retry turns a lost response into double-counted
 usage.
 
 ```python

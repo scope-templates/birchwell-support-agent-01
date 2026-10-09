@@ -77,5 +77,5 @@ curl -X POST https://api.birchwell.io/v1/usage/events \
   -d '{"events": [{"customer_id": "cus_a81f20", "meter": "api_call", "value": 1, "timestamp": "2026-04-02T09:00:00Z"}]}'
 ```
 
-Do not resend a rejected event unchanged; it will be rejected again. Fix it and send it in a new request with a new
+Do not send a rejected event again unchanged; it will be rejected again. Fix it and send it in a new request with a new
 `Idempotency-Key`.
